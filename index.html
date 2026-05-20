@@ -474,8 +474,8 @@
 
   <div class="progress-wrap">
     <div class="progress-meta">
-      <span id="step-label">Passo 1 de 3 — Seus dados</span>
-      <strong id="step-pct">33%</strong>
+      <span id="step-label">Passo 1 de 2 — Seus dados</span>
+      <strong id="step-pct">50%</strong>
     </div>
     <div class="progress-track">
       <div class="progress-fill" id="prog" style="width:50%"></div>
@@ -689,7 +689,7 @@
 
   function atualizarUI() {
     const labels = ['', 'Passo 1 de 2 — Seus dados', 'Passo 2 de 2 — Empresa e setor'];
-    const pcts = [0, 50, 100];
+    const pcts = [0, 50, 70];
     document.getElementById('prog').style.width = pcts[cur] + '%';
     document.getElementById('step-label').textContent = labels[cur] || '';
     document.getElementById('step-pct').textContent = pcts[cur] + '%';
